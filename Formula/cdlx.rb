@@ -5,21 +5,21 @@
 class Cdlx < Formula
   desc "Code Lexica command-line tool"
   homepage "https://codelexica.com"
-  version "2.0.1"
+  version "2.0.2"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.1/cdlx_2.0.1_darwin_amd64.tar.gz"
-      sha256 "3731d0191fdbc2819afcabbdcf67770e18c7e72397657e89e8474796e8e11adf"
+      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.2/cdlx_2.0.2_darwin_amd64.tar.gz"
+      sha256 "1578421798aaad94f37a4f7e16f0bcb2e47ee73514eac28c0e93c0f133de8c47"
 
       define_method(:install) do
         bin.install "cdlx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.1/cdlx_2.0.1_darwin_arm64.tar.gz"
-      sha256 "0234045deea43f95c329408ecc04af38029082b005b488baa7ea7ebf15ad582d"
+      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.2/cdlx_2.0.2_darwin_arm64.tar.gz"
+      sha256 "8da60d25680f2ae32b7673b9e3759de79e02e08da1c48497bb283e98523bc3aa"
 
       define_method(:install) do
         bin.install "cdlx"
@@ -29,15 +29,15 @@ class Cdlx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.1/cdlx_2.0.1_linux_amd64.tar.gz"
-      sha256 "6462aad539efc1496a87b4533f8dad58ca7a873f3dc81ef28e4283851306f65b"
+      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.2/cdlx_2.0.2_linux_amd64.tar.gz"
+      sha256 "fa6887485f17afd9437a4865d128fcb476fd828bd1049fa97e443ed308f36ac8"
       define_method(:install) do
         bin.install "cdlx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.1/cdlx_2.0.1_linux_arm64.tar.gz"
-      sha256 "a921e84540526612d44298bbf7ee6671edd9b05bc83ba5a7a590093180262524"
+      url "https://github.com/codelexica/cdlx-dist/releases/download/v2.0.2/cdlx_2.0.2_linux_arm64.tar.gz"
+      sha256 "a6320334b702b8a9679a86932904f9059142db82535d6f8a3126d484fd4f34b1"
       define_method(:install) do
         bin.install "cdlx"
       end
